@@ -1,0 +1,19 @@
+{
+  "name": "productinventory",
+  "version": "1.0.0",
+  "description": "product inventory using MEAN stack for ListingHippo",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Akshay Verma",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "mongodb": "^3.1.13",
+    "mongojs": "^2.6.0",
+    "mongoose": "^5.4.12"
+  }
+}

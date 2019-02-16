@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="/css/form.css" />
+    <title>Add Product Form</title>
+  </head>
+  <body>
+    <form id="regForm" action="/products" method="POST">
+      <h1>Register:</h1>
+
+      <!-- One "tab" for each step in the form: -->
+      <div class="tab">
+        Client Code:
+        <p>
+          <input
+            placeholder="client code"
+            name="cc"
+            oninput="this.className = ''"
+          />
+        </p>
+        Title:
+        <p>
+          <input
+            placeholder="title"
+            name="title"
+            oninput="this.className = ''"
+          />
+        </p>
+        Brand:
+        <p>
+          <input
+            placeholder="brand"
+            name="brand"
+            oninput="this.className = ''"
+          />
+        </p>
+        Model Number:
+        <p>
+          <input
+            placeholder="model no"
+            name="modelNo"
+            oninput="this.className = ''"
+          />
+        </p>
+        Dimensions:
+        <p>
+          <input
+            placeholder="dimension"
+            name="dimension"
+            oninput="this.className = ''"
+          />
+        </p>
+        Weight:
+        <p>
+          <input
+            placeholder="weight"
+            name="weight"
+            oninput="this.className = ''"
+          />
+        </p>
+        Quantity:
+        <p>
+          <input
+            placeholder="quantity"
+            name="quantity"
+            oninput="this.className = ''"
+          />
+        </p>
+        Category:
+        <p>
+          <input
+            placeholder="category"
+            name="category"
+            oninput="this.className = ''"
+          />
+        </p>
+      </div>
+
+      <div class="tab">
+        Enter image url:
+        <p>
+          <input
+            placeholder="image url"
+            name="image"
+            oninput="this.className = ''"
+          />
+        </p>
+        Description:
+        <p>
+          <input
+            placeholder="describe in 20 words"
+            name="description"
+            oninput="this.className = ''"
+          />
+        </p>
+        Location:
+        <p>
+          <input
+            placeholder="location"
+            name="location"
+            oninput="this.className = ''"
+          />
+        </p>
+      </div>
+
+      <div class="tab">
+        Listed Price:
+        <p>
+          <input
+            placeholder="listed price"
+            name="lp"
+            oninput="this.className = ''"
+          />
+        </p>
+        Selling Price:
+        <p>
+          <input
+            placeholder="selling price"
+            name="sp"
+            oninput="this.className = ''"
+          />
+        </p>
+        Reserve:
+        <p>
+          <input
+            placeholder="reserve"
+            name="reserve"
+            oninput="this.className = ''"
+          />
+        </p>
+      </div>
+
+      <div style="overflow:auto;">
+        <div style="float:right;">
+          <button type="button" id="prevBtn" onclick="nextPrev(-1)">
+            Previous
+          </button>
+          <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+        </div>
+      </div>
+
+      <!-- Circles which indicates the steps of the form: -->
+      <div style="text-align:center;margin-top:40px;">
+        <span class="step"></span>
+        <span class="step"></span>
+        <span class="step"></span>
+        <span class="step"></span>
+      </div>
+    </form>
+
+    <script src="/js/form.js"></script>
+  </body>
+</html>
