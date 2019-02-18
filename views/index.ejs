@@ -1,26 +1,54 @@
-<h1>This is the product page</h1>
+<% include partials/header %>
 
-<% products.forEach(function(product){ %>
+<div class="container">
+  <h1 style="margin-top: 100px">Product Inventory</h1>
+  <p>Search/Sort the product you are looking for</p>
 
-<h4><%= product.status %></h4>
-<h4><%= product.sku %></h4>
-<!-- <h4><%= product.condition %></h4>
-<h4><%= product.clientCode %></h4>
-<h4><%= product.brand %></h4>
-<h4><%= product.modelNumber %></h4>
-<h4><%= product.dimension %></h4>
-<h4><%= product.weight %></h4>
-<h4><%= product.quantity %></h4> -->
-<h4><%= product.title %></h4>
-<h4><%= product.category %></h4>
-<!-- <h4><%= product.description %></h4>
-<img src="<%= product.images %>" />
-<h4><%= product.listedPrice %></h4> -->
-<h4><%= product.sellingPrice %></h4>
-<!-- <h4><%= product.reserve %></h4>
-<h4><%= product.location %></h4>
-<h4><%= product.paymentMethod %></h4>
-<h4><%= product.transactionDetails %></h4>
-<h4><%= product.AmountReceived %></h4> -->
+  <table id="p_table" class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">
+          Status
+        </th>
+        <th scope="col">
+          Title
+        </th>
+        <th scope="col">
+          Price
+        </th>
+        <th scope="col">
+          Category
+        </th>
+        <th scope="col">
+          SKU
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <% products.forEach(function(product){ %>
+      <tr>
+        <td><%= product.status %></td>
+        <td>
+          <a href="/products/<%=product._id %>" style="color: inherit">
+            <%= product.title %></a
+          >
+        </td>
+        <td><%= product.sellingPrice %></td>
+        <td><%= product.category %></td>
+        <td><%= product.sku %></td>
+      </tr>
+      <% }); %>
+    </tbody>
+  </table>
 
-<% }); %>
+  <button
+    id="btnAdd"
+    style="margin :20px auto"
+    type="button"
+    class="btn btn-outline-secondary"
+  >
+    Add a Product
+  </button>
+</div>
+
+<% include partials/footer %>

@@ -1,8 +1,281 @@
 <% include partials/header %>
-<h1>Landing Page</h1>
 
-<p>Welcome to ListingHippo</p>
+<!-- Header with full-height image -->
+<header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-left w3-text-white" style="padding:48px"></div>
+  <div
+    class="w3-display-bottomleft w3-text-grey w3-large"
+    style="padding:24px 48px"
+  >
+    <i class="fab fa-facebook w3-hover-opacity"></i>
+    <i class="fab fa-instagram w3-hover-opacity"></i>
+    <i class="fab fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fab fa-linkedin w3-hover-opacity"></i>
+  </div>
+</header>
 
-<a href="">View Products</a>
+<!-- About Section -->
+<div class="w3-container" style="padding:128px 16px" id="about">
+  <h3 class="w3-center">ABOUT THE COMPANY</h3>
+  <p class="w3-center w3-large">Key features of our company</p>
+  <div class="w3-row-padding w3-center" style="margin-top:64px">
+    <div class="w3-quarter">
+      <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i>
+      <p class="w3-large">Responsive</p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore.
+      </p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-heart w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Passion</p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore.
+      </p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fas fa-gem w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Design</p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore.
+      </p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-cog w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Support</p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore.
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- Work Section -->
+<div class="w3-container w3-light-grey" style="padding:128px 16px" id="work">
+  <h3 class="w3-center">OUR WORK</h3>
+  <p class="w3-center w3-large">What we've done for people</p>
+
+  <div class="w3-row-padding" style="margin-top:64px">
+    <div class="w3-col l3 m6">
+      <img
+        src="#"
+        style="width:100%"
+        onclick="onClick(this)"
+        class="w3-hover-opacity"
+        alt="Work 1"
+      />
+    </div>
+    <div class="w3-col l3 m6">
+      <img
+        src="#"
+        style="width:100%"
+        onclick="onClick(this)"
+        class="w3-hover-opacity"
+        alt="Work 2"
+      />
+    </div>
+    <div class="w3-col l3 m6">
+      <img
+        src="#"
+        style="width:100%"
+        onclick="onClick(this)"
+        class="w3-hover-opacity"
+        alt="Work 3"
+      />
+    </div>
+    <div class="w3-col l3 m6">
+      <img
+        src="#"
+        style="width:100%"
+        onclick="onClick(this)"
+        class="w3-hover-opacity"
+        alt="Work 4"
+      />
+    </div>
+  </div>
+
+  <div class="">
+    <div class="w3-col l3 m6">
+      <img
+        src="#"
+        style="width:100%"
+        onclick="onClick(this)"
+        class="w3-hover-opacity"
+        alt="Work 5"
+      />
+    </div>
+    <div class="w3-col l3 m6">
+      <img
+        src="#"
+        style="width:100%"
+        onclick="onClick(this)"
+        class="w3-hover-opacity"
+        alt="Work 6"
+      />
+    </div>
+    <div class="w3-col l3 m6">
+      <img
+        src="#"
+        style="width:100%"
+        onclick="onClick(this)"
+        class="w3-hover-opacity"
+        alt="Work 7"
+      />
+    </div>
+    <div class="w3-col l3 m6">
+      <img
+        src="#"
+        style="width:100%"
+        onclick="onClick(this)"
+        class="w3-hover-opacity"
+        alt="Work 8"
+      />
+    </div>
+  </div>
+</div>
+
+<!-- Team Section -->
+<div class="w3-container" style="padding:128px 16px" id="team">
+  <h3 class="w3-center">THE TEAM</h3>
+  <p class="w3-center w3-large">The ones who runs this company</p>
+  <div class="w3-row-padding w3-grayscale" style="margin-top:64px">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <div class="w3-container">
+          <h3>Team Member 1</h3>
+          <p class="w3-opacity">CEO & Founder</p>
+          <p>
+            Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse
+            sodales pellentesque elementum.
+          </p>
+          <p>
+            <button class="w3-button w3-light-grey w3-block">
+              <i class="fa fa-envelope"></i> Contact
+            </button>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <div class="w3-container">
+          <h3>Team Member 2</h3>
+          <p class="w3-opacity">Designation</p>
+          <p>
+            Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse
+            sodales pellentesque elementum.
+          </p>
+          <p>
+            <button class="w3-button w3-light-grey w3-block">
+              <i class="fa fa-envelope"></i> Contact
+            </button>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <div class="w3-container">
+          <h3>Team Member 3</h3>
+          <p class="w3-opacity">Designation</p>
+          <p>
+            Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse
+            sodales pellentesque elementum.
+          </p>
+          <p>
+            <button class="w3-button w3-light-grey w3-block">
+              <i class="fa fa-envelope"></i> Contact
+            </button>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <div class="w3-container">
+          <h3>Team Member 4</h3>
+          <p class="w3-opacity">Designation</p>
+          <p>
+            Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse
+            sodales pellentesque elementum.
+          </p>
+          <p>
+            <button class="w3-button w3-light-grey w3-block">
+              <i class="fa fa-envelope"></i> Contact
+            </button>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Contact Section -->
+<div class="w3-container w3-light-grey" style="padding:128px 16px" id="contact">
+  <h3 class="w3-center">CONTACT</h3>
+  <p class="w3-center w3-large">Lets get in touch. Send us a message:</p>
+  <div style="margin-top:48px">
+    <p>
+      <i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i>
+      Mississauga, CA
+    </p>
+    <p>
+      <i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone:
+      999-999-9999
+    </p>
+    <p>
+      <i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i>
+      Email: mail@mail.com
+    </p>
+    <br />
+    <form action="/action_page.php" target="_blank">
+      <p>
+        <input
+          class="w3-input w3-border"
+          type="text"
+          placeholder="Name"
+          required
+          name="Name"
+        />
+      </p>
+      <p>
+        <input
+          class="w3-input w3-border"
+          type="text"
+          placeholder="Email"
+          required
+          name="Email"
+        />
+      </p>
+      <p>
+        <input
+          class="w3-input w3-border"
+          type="text"
+          placeholder="Subject"
+          required
+          name="Subject"
+        />
+      </p>
+      <p>
+        <input
+          class="w3-input w3-border"
+          type="text"
+          placeholder="Message"
+          required
+          name="Message"
+        />
+      </p>
+      <p>
+        <button class="w3-button w3-black" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </p>
+    </form>
+  </div>
+</div>
 
 <% include partials/footer %>

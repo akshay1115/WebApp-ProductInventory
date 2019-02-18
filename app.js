@@ -37,7 +37,7 @@ var productSchema = new mongoose.Schema({
   location: String,
   paymentMethod: String, // "wireTransfer", "cash", "paypal", "cheque", "creditCard"
   transactionDetails: String,
-  AmountReceived: String
+  amountReceived: String
 });
 
 var product = mongoose.model("product", productSchema);
@@ -54,12 +54,12 @@ var product = mongoose.model("product", productSchema);
 //     dimension: "3x3x6",
 //     weight: "5",
 //     quantity: "1",
-//     title: "handbag", // max 64 char, min 10 char7
-//     category: "clothing",
+//     title: "zslacnslelt", // max 64 char, min 10 char7
+//     category: "rafda",
 //     description: "String",
 //     images: "https://farm1.staticflickr.com/60/215827008_6489cd30c3.jpg",
 //     listedPrice: "50",
-//     sellingPrice: "60",
+//     sellingPrice: "125",
 //     reserve: 25,
 //     location: "Milton",
 //     paymentMethod: "Cash", // "wireTransfer", "cash", "paypal", "cheque", "creditCard"
@@ -114,7 +114,7 @@ app.post("/products", function(req, res) {
   var location = req.body.location;
   // var paymentMethod = req.body.parentMethod;
   // var transactionDetails = req.body.transactionDetails;
-  // var AmountReceived = req.body.AmountReceived;
+  // var amountReceived = req.body.AmountReceived;
   var newProduct = {
     clientCode: clientCode,
     brand: brand,

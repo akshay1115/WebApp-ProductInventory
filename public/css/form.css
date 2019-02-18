@@ -46,3 +46,19 @@ input.invalid {
 .step.finish {
   background-color: #4caf50;
 }
+
+.btns {
+  border: none;
+  background-color: rgb(212, 248, 212);
+  border-radius: 7%;
+  color: #4caf50;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.btns:hover {
+  background-color: #4caf50;
+  color: white;
+}

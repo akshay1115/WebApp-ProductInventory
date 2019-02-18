@@ -1,0 +1,35 @@
+.display-4 {
+  text-transform: uppercase;
+  margin-bottom: 50px;
+}
+.text-muted {
+  text-transform: lowercase;
+}
+
+.container {
+  margin-top: 150px;
+  margin-bottom: 100px;
+}
+
+#carouselExampleIndicators {
+  margin: 40px auto;
+}
+
+.accordion {
+  width: 75%;
+  margin: 5px auto;
+}
+
+span {
+  color: green;
+  font-weight: 700;
+}
+.card {
+  margin: 5px auto;
+  font-weight: 500;
+}
+
+img:hover {
+  opacity: 0.8;
+  border: rgb(231, 243, 126) 2px solid;
+}
