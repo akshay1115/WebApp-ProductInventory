@@ -25,3 +25,10 @@ html {
 .w3-bar .w3-button {
   padding: 16px;
 }
+
+#dlt {
+  margin-left: 633px;
+}
+.btnPos {
+  float: left;
+}

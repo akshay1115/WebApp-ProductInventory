@@ -1,9 +1,13 @@
-<% include partials/header %>
+v<% include partials/header %>
 
-<!-- Register Page- takes in all the necessary information about the product and submits post request to sav in the DB -->
+<!-- Edit Page- takes pre-filled form from new.ejs by taking into account the _id for selected product -->
 
-<form id="regForm" action="/products" method="POST">
-  <h2>Provide Information about the Product:</h2>
+<form
+  id="regForm"
+  action="/products/<%= product._id %>?_method=PUT"
+  method="POST"
+>
+  <h2>Edit Information about the Product: <%= product.title %></h2>
 
   <!-- One "tab" for each step in the form: -->
   <!-- Tab 1 -->
@@ -11,23 +15,31 @@
     Client Code:
     <p>
       <input
-        placeholder="client code"
+        value="<%= product.clientCode %> "
         name="cc"
         oninput="this.className = ''"
       />
     </p>
     Title:
     <p>
-      <input placeholder="title" name="title" oninput="this.className = ''" />
+      <input
+        value="<%= product.title %>"
+        name="title"
+        oninput="this.className = ''"
+      />
     </p>
     Brand:
     <p>
-      <input placeholder="brand" name="brand" oninput="this.className = ''" />
+      <input
+        value="<%= product.brand %>"
+        name="brand"
+        oninput="this.className = ''"
+      />
     </p>
     Model Number:
     <p>
       <input
-        placeholder="model no"
+        value="<%= product.modelNumber %>"
         name="modelNo"
         oninput="this.className = ''"
       />
@@ -35,19 +47,23 @@
     Dimensions:
     <p>
       <input
-        placeholder="in inches"
+        value="<%= product.dimension %>"
         name="dimension"
         oninput="this.className = ''"
       />
     </p>
     Weight:
     <p>
-      <input placeholder="in lbs" name="weight" oninput="this.className = ''" />
+      <input
+        value="<%= product.weight %>"
+        name="weight"
+        oninput="this.className = ''"
+      />
     </p>
     Quantity:
     <p>
       <input
-        placeholder="quantity"
+        value="<%= product.quantity %>"
         name="quantity"
         oninput="this.className = ''"
       />
@@ -55,7 +71,7 @@
     Category:
     <p>
       <input
-        placeholder="category"
+        value="<%= product.category %>"
         name="category"
         oninput="this.className = ''"
       />
@@ -71,7 +87,7 @@
     Enter image url:
     <p>
       <input
-        placeholder="attach a valid image url"
+        value="<%= product.images %>"
         name="image"
         oninput="this.className = ''"
       />
@@ -79,7 +95,7 @@
     Description:
     <p>
       <input
-        placeholder="describe in 20 words"
+        value="<%= product.description %>"
         name="description"
         oninput="this.className = ''"
       />
@@ -87,7 +103,7 @@
     Location:
     <p>
       <input
-        placeholder="location"
+        value="<%= product.location %>"
         name="location"
         oninput="this.className = ''"
       />
@@ -99,7 +115,7 @@
     Listed Price:
     <p>
       <input
-        placeholder="listed price"
+        value="<%= product.listedPrice %>"
         name="lp"
         oninput="this.className = ''"
       />
@@ -107,7 +123,7 @@
     Selling Price:
     <p>
       <input
-        placeholder="selling price"
+        value="<%= product.sellingPrice %>"
         name="sp"
         oninput="this.className = ''"
       />
@@ -115,7 +131,7 @@
     Reserve:
     <p>
       <input
-        placeholder="reserve"
+        value="<%= product.reserve %>"
         name="reserve"
         oninput="this.className = ''"
       />

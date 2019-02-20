@@ -26,11 +26,14 @@ function nextPrev(n) {
   var x = document.getElementsByClassName("tab");
   // Exit the function if any field in the current tab is invalid:
   if (n == 1 && !validateForm()) return false;
+
+  // Random sku generated
   if (n === 1 && currentTab === 0) {
     min = Math.ceil(100000);
     max = Math.floor(999999);
     sku = Math.floor(Math.random() * (max - min)) + min;
     alert("Sku is " + sku);
+    document.getElementById("sku").value = sku;
   }
   // Hide the current tab:
   x[currentTab].style.display = "none";

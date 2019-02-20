@@ -1,11 +1,15 @@
 <% include partials/header %>
 
+
+<!-- This page shows the complete information of particular product -->
 <div class="container">
   <h1 class="display-4">
     <%= product.title %><small class="text-muted">
-      with complete information</small
+      datailed information</small
     >
   </h1>
+
+  <!-- Carousel that showcases images in a slideshow -->
   <div
     id="carouselExampleIndicators"
     class="carousel slide w-75"
@@ -63,6 +67,7 @@
     </a>
   </div>
 
+  <!-- Card- a new way of representing information about a product -->
   <div class="card" style="width: 55rem;">
     <div class="card-body">
       <h3 class="card-title"><strong> Brand: <%= product.brand %></strong></h3>
@@ -76,16 +81,19 @@
       <li class="list-group-item">Location: <%= product.location %></li>
     </ul>
     <div class="card-body">
-      <a href="#" class="card-link btn btn-secondary"
+      <a
+        href="/products/<%= product._id %>/edit"
+        class="card-link btn btn-secondary btnPos"
         ><strong>Edit Info</strong>
       </a>
-      <a href="/products" class="card-link btn btn-secondary"
-        ><strong>Go to All Products</strong>
+      <form action="/products/<%= product._id %>?_method=DELETE" method="POST">
+        <button type="submit" id="dlt" class="btn btn-danger btnPos"><strong>Delete</strong></button>
+      </form>
       </a>
     </div>
   </div>
 
-  <!-- desc -->
+  <!-- Dropdown for Description, toggles on and off -->
   <div class="accordion" id="accordionExample">
     <div class="card">
       <div class="card-header" id="headingOne">
@@ -119,7 +127,7 @@
       </div>
     </div>
   </div>
-
+<!-- Dropdown for Payment Info, toggles on and off -->
   <div class="accordion" id="accordionExample">
     <div class="card">
       <div class="card-header" id="headingOne">
@@ -145,15 +153,14 @@
       >
         <div class="card-body">
           <ul>
-            <li><%= product.paymentMethod %></li>
-            <li>Dimension: <%= product.transactionDetails %></li>
-            <li>Weight: <%= product.amountReceived %></li>
+            <li>Payment Method: <%= product.paymentMethod %></li>
+            <li>Transaction Details: <%= product.transactionDetails %></li>
+            <li>Amount Received: <%= product.amountReceived %></li>
           </ul>
         </div>
       </div>
     </div>
   </div>
 </div>
-<!-- status, sku, clientcode, listed price, reserve -->
 
 <% include partials/footer %>
